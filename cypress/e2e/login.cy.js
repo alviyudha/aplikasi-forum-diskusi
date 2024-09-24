@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * - Login spec
  *   - should display login page correctly
@@ -6,6 +7,8 @@
  *   - should display alert when email and password are wrong
  *   - should display homepage when email and password are correct
  */
+
+import { beforeEach, describe, expect, it } from "vitest";
 
 describe("Login spec", () => {
   beforeEach(() => {
