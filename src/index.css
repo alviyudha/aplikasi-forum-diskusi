@@ -1,0 +1,506 @@
+/* LoginPage */
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.login-page__hero {
+  margin-bottom: 20px;
+}
+
+.login-page__hero h1 {
+  font-size: 4rem;
+  color: #3498db;
+}
+
+.login-page__main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-page__main h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LoginInput */
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.login-input button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-input button:hover {
+  background-color: #2980b9;
+}
+
+/* RegisterPage */
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.register-page__hero {
+  margin-bottom: 20px;
+}
+
+.register-page__hero h1 {
+  font-size: 4rem;
+  color: #3498db;
+}
+
+.register-page__main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-page__main h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* RegisterInput */
+
+.register-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-input input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.register-input button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-input button:hover {
+  background-color: #2980b9;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+}
+
+.navigation img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.navigation nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.navigation nav a:hover {
+  text-decoration: underline;
+}
+
+.navigation button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation button:hover {
+  background-color: white;
+  color: #3498db;
+}
+
+/* CreateThread */
+
+.create-thread {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-thread h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.create-thread-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-thread-form input,
+.create-thread-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.create-thread-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.create-thread-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+}
+
+.success-message {
+  color: #28a745;
+}
+
+/* thread list item */
+.thread-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.thread-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.thread-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.thread-item {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thread-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.thread-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.thread-item h3 a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.thread-item h3 a:hover {
+  color: #0056b3;
+}
+
+.thread-body {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.thread-item__details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.thread-item__details .category {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.thread-item__details .created-at,
+.thread-item__details .comments-count {
+  font-size: 13px;
+}
+.thread-item__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.thread-item__user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.thread-item__user-name {
+  font-weight: bold;
+}
+
+/*ThreadDetail */
+
+.thread-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.thread-detail__header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.thread-detail__category {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.thread-detail__body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.thread-detail__body p {
+  margin-bottom: 15px;
+}
+
+.thread-detail__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.thread-detail__owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.thread-detail__owner img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.thread-detail__owner p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Comment section */
+.thread-detail__comments {
+  margin-top: 30px;
+}
+
+.thread-detail__comments h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.thread-detail__comment {
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.comment__owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comment__owner img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.comment__owner p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.thread-detail__comment p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Comment input */
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-input textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.comment-input button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-input button:hover {
+  background-color: #0056b3;
+}
+
+/* createThreadButton */
+.create-thread-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.create-thread-button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  position: sticky;
+  top: 0;
+}
