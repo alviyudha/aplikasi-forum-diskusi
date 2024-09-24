@@ -29,7 +29,7 @@ function LoginPage() {
       <article className="login-page__main">
         <h2>
           See <strong>The World</strong>, <br />
-          Through Open Space.
+          Discussion Forum App.
         </h2>
 
         {errorMessage && <p className="error-message">{errorMessage}</p>}
