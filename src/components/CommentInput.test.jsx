@@ -1,3 +1,10 @@
+/* - CommentInput component
+- should handle content typing correctly
+- should call onAddComment when form is submitted
+- should clear the textarea after submitting the comment */
+
+
+
 import { describe, it, expect, afterEach, vi } from "vitest";
 import { render, screen, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";

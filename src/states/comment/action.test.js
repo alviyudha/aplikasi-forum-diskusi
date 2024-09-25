@@ -1,3 +1,8 @@
+/* - asyncAddComment thunk
+- should dispatch actions correctly when data fetching is successful
+- should dispatch actions and set error correctly when data fetching fails */
+
+
 import { afterEach, it, vi, describe, expect, beforeEach } from "vitest";
 import { hideLoading, showLoading } from "react-redux-loading-bar";
 import api from "../../utils/api";

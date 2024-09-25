@@ -1,3 +1,7 @@
+/* - asyncCreateThread thunk
+- should dispatch actions correctly when data fetching is successful
+- should dispatch actions and set error correctly when data fetching fails */
+
 import { afterEach, it, vi, describe, expect, beforeEach } from "vitest";
 import { hideLoading, showLoading } from "react-redux-loading-bar";
 import api from "../../utils/api";
@@ -49,7 +53,9 @@ describe("asyncCreateThread thunk", () => {
     // Assert
     expect(dispatch).toHaveBeenCalledWith(createThreadRequest());
     expect(dispatch).toHaveBeenCalledWith(showLoading());
-    expect(dispatch).toHaveBeenCalledWith(createThreadSuccess(fakeThreadResponse));
+    expect(dispatch).toHaveBeenCalledWith(
+      createThreadSuccess(fakeThreadResponse)
+    );
     expect(dispatch).toHaveBeenCalledWith(hideLoading());
   });
 
@@ -70,7 +76,9 @@ describe("asyncCreateThread thunk", () => {
     // Assert
     expect(dispatch).toHaveBeenCalledWith(createThreadRequest());
     expect(dispatch).toHaveBeenCalledWith(showLoading());
-    expect(dispatch).toHaveBeenCalledWith(createThreadFailure(fakeErrorResponse.message));
+    expect(dispatch).toHaveBeenCalledWith(
+      createThreadFailure(fakeErrorResponse.message)
+    );
     expect(dispatch).toHaveBeenCalledWith(hideLoading());
   });
 });

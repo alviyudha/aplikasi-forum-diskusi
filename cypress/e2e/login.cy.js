@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * - Login spec
  *   - should display login page correctly
