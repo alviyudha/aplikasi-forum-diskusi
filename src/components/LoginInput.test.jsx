@@ -14,7 +14,7 @@ import LoginInput from "./LoginInput";
 
 describe("LoginInput component", () => {
   afterEach(() => {
-    cleanup(); // membersihkan DOM setelah setiap pengujian
+    cleanup(); 
   });
 
   it("should handle email typing correctly", async () => {
@@ -61,6 +61,6 @@ describe("LoginInput component", () => {
       email: "test@example.com",
       password: "password123",
     });
-    expect(loginMock).toHaveBeenCalledTimes(1); // Pastikan login hanya dipanggil sekali
+    expect(loginMock).toHaveBeenCalledTimes(1); 
   });
 });
